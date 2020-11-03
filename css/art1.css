@@ -1,0 +1,14 @@
+/*Padding top so that the content is visible and it will not be covered by the navigation*/
+.articlecontent-wrapper{
+    padding-top:20px;
+    font-family: Montserrat;
+    width:40%
+}
+
+.footer-copyright {
+    position:sticky;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 15px;
+}

@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Josefin+Sans:400,700|Montserrat:300,400,700,800&display=swap");
+
+/*Padding top so that the content is visible and it will not be covered by the navigation*/
+.bio {
+  padding-top: 20px;
+}
+
+h1 {
+  font-family: Abril Fatface;
+}
+
+body {
+  font-family: Montserrat;
+}
+
+.sidephoto img {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.sidephoto:hover img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+@media only screen and (min-width: 768px) {
+  .img-fluid {
+    margin-top: 10%;
+  }
+
+  .bio-desc {
+    padding: 50px;
+  }
+  .sidephoto {
+    border-right: 1px black;
+    border-right-style: solid;
+  }
+  .main-content-divider{
+      margin-top: 5%;
+  }
+}
+@media only screen and (max-width: 1200px) and(min-width:1000px) {
+  .img-fluid {
+    margin-top: 15%;
+  }
+
+  .bio-desc {
+    padding: 50px;
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  .bio-desc {
+    padding: 60px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+  .bio-desc {
+    font-size: 14px;
+  }
+  .img-fluid {
+    margin-top: 35%;
+  }
+}
+@media only screen and (max-width: 1000px) and (min-width: 900px) {
+  .img-fluid {
+    margin-top: 36%;
+  }
+  .bio-desc {
+    font-size: 15px;
+  }
+}

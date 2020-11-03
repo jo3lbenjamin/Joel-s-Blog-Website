@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Josefin+Sans:400,700|Montserrat:300,400,700,800&display=swap");
+
+.load1 {
+  padding-top: 20px;
+  font-family: Abril Fatface;
+}
+
+.text-art {
+  font-family: montserrat;
+}
+
+h5 {
+  font-weight: 700;
+}
+
+body{
+    font-family: montserrat;
+}
+
+.btn:hover {
+  box-shadow: inset 0 0 0 1px #1f1e1e;
+}
+
+.img-wrapper {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.img-wrapper img {
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+
+  vertical-align: middle;
+}
+
+.img-wrapper img:hover {
+  -webkit-transform: scale(1.1); /* Safari and Chrome */
+  -moz-transform: scale(1.1); /* Firefox */
+  -ms-transform: scale(1.1); /* IE 9 */
+  -o-transform: scale(1.1); /* Opera */
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 800px) {
+  .wrapper {
+    padding: 10px;
+  }
+  .rectangle {
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media only screen and (max-width: 1200px)  {
+  .wrapper {
+    padding: 10%;
+  }
+  .rectangle {
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .text-art {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .wrapper {
+    padding: 10%;
+  }
+  .rectangle {
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .text-art {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  .wrapper {
+    padding: 10%;
+  }
+  .rectangle {
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .text-art {
+    margin-top: 70px;
+  }
+}

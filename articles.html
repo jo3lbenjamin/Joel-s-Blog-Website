@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/navigation.css">
+    <link rel="stylesheet" type="text/css" href="css/articles.css">
+    
+    <!-- Bootstrap JS -->
+    <script src="js/jquery/jquery-3.4.1.js"></script>
+    <script src="js/bootstrap/bootstrap.bundle.js"></script>
+
+    <!--Icons-->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(".load1")
+          .hide(0)
+          .fadeIn(2000);
+        $(".load2")
+          .hide(0)
+          .delay(1500)
+          .fadeIn(2000);
+      });
+    </script>
+
+    <title>Joel's Website</title>
+  </head>
+  <body>
+    <!--Navigation Bar-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container sticky-top">
+        <a class="nav-item nav-link" href="index.html">
+          <img src="img/drums/logo.png" class="hide" width="55%" /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav nav-fill w-100">
+            <!--To ensure all navigation elements are centered-->
+            <!--Navigation elements-->
+            <a class="nav-item nav-link pt-3"  href="articles.html">Articles</a>
+            <a class="nav-item nav-link pt-3" href="bio.html">About</a>
+            <a class="nav-item nav-link home" href="index.html">
+            <img src="img/drums/logo.png"  width="35%" /></a>
+            <a class="nav-item nav-link pt-3" href="slideshow.html">Gallery</a>
+            <a class="nav-item nav-link pt-3" href="contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--Title header-->
+        <div class="title container">
+            <div class="row load1">
+              <div class="col text-center mt-5 mt-md-4 mt-lg-3">
+                <h1>Articles</h1>
+              </div>
+            </div>
+          </div>
+    
+    
+      <div class="article-wrapper container load2 ">
+        <div class="row justify-content-center">
+          <!--Place links to articles here. 3 Breakpoints here.-->
+          <!--First article-->
+          <div class="art1-wrapper col-sm-12 col-md-6 text-center mt-5 mt-md-0">
+            <p class="text-center">Featured</p>
+            <div class="d-flex art art1 justify-content-center border2"> 
+              <div>
+                <img src="./img/drums/drums1.png" class="featured img"/>
+              </div>
+              <div class="text1">
+                <p>14 May 2019</p>
+                <h2>Tips for the self-taught drummer</h2>
+                <p>In this article, I will be sharing with all of you great tips!</p>
+                <a
+              href="article1.html"
+              class="btn"
+              style="border:1px; border-style: solid;"
+              >Read Article</a
+            >
+              </div>
+            </div>
+          </div>
+
+
+
+          <!--Second % Third article-->
+          <div class="col-sm-12 col-md-6 text-center mt-5 mt-md-0">
+            <p class="text-center">Recent</p>
+            <div class="art2-wrapper text-center justify-content-center border2">
+              <div class="d-flex article art art2">
+                <div>
+                  <img src="./img/handysalim.jpeg" class="img"/>
+                </div>
+                <div class="text">
+                  <p>20 May 2019</p>
+                  <h2>Meeting My Hero, Handy Salim</h2>
+                  <p>The story on how I met a famous drum icon from Indonesia.</p>
+                  <a
+              href="article2.html"
+              class="btn"
+              style="border:1px; border-style: solid;"
+              >Read Article</a
+            >
+                </div>
+              </div>
+  
+              <div class="d-flex art3 article art">
+                <div>
+                  <img src="./img/kire.jpg" class="img"/>
+                </div>
+                <div class="text justify-content-center">
+                  <p>20 May 2019</p>
+                  <h2>The Drummer from Nagaland</h2>
+                  <p>Naga what? Check out how I got to meet this awesome drummer!</p>
+                  <a
+              href="article3.html"
+              class="btn"
+              style="border:1px; border-style: solid;"
+              >Read Article</a
+            >
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+  
+  <!-- Footer -->
+  <footer class="page-footer font-small blue">
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3 sticky-bottom">© 2019 Copyright:Joel Surya</div>
+  </footer>
+</html>

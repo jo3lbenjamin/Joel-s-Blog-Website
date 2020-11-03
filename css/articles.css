@@ -1,0 +1,109 @@
+/*Padding top so that the content is visible and it will not be covered by the navigation*/
+.title {
+  padding-top: 20px;
+  font-family: Abril Fatface;
+}
+
+body {
+  font-family: Montserrat;
+}
+
+
+.btn:hover {
+    box-shadow: inset 0 0 0 1px #1f1e1e;
+  }
+
+h2 {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.img {
+  width: 150px;
+}
+
+.featured {
+  width: 200px;
+}
+
+@media screen and (min-width: 768px) {
+  .art {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+  .art3 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .title {
+    padding-bottom: 35px;
+  }
+
+  .art2 {
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+  .art1 {
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+  .text {
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .featured {
+    width: 125px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .art2-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  .featured {
+    width: 150px;
+  }
+
+  .article {
+    display: flex;
+    flex-direction: column;
+  }
+  h2 {
+    font-size: 18px;
+    width: 200px;
+    padding-left: 10px;
+    width: 100%;
+  }
+  .text1 {
+    padding-left: 10px;
+  }
+  .border1{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+  .border2{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding:20px
+  }
+  .art2{
+      border-right:1px solid black;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .img {
+    width: 100px;
+  }
+  .featured {
+    width: 125px;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+}

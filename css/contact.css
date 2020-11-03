@@ -1,0 +1,33 @@
+/*Padding top so that the content is visible and it will not be covered by the navigation*/
+.text-wrapper {
+  padding-top: 20px;
+  font-family: Abril Fatface;
+}
+
+p {
+  font-family: Montserrat;
+}
+
+body {
+  font-family: Montserrat;
+}
+/*This is so that the error message will be red in color*/
+.error {
+  color: red;
+}
+
+input:invalid {
+  background: rgb(218, 133, 133);
+}
+.btn{
+  border: 1px solid black;
+}
+.btn:hover {
+  box-shadow: inset 0 0 0 1px #000;
+
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}

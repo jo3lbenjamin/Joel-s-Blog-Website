@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Josefin+Sans:400,700|Montserrat:300,400,700,800|EB+Garamond:400,700,800&display=swap");
+
+/* These are the basic stylings*/
+
+nav {
+  font-family: Josefin Sans;
+  font-weight: 700;
+}
+
+html {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  /* background: #C2B2B4; */
+  display: table;
+}
+
+/* Styling for links*/
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.navbar-light {
+  margin-right: 120px;
+  margin-left: 120px;
+  border: 2px black;
+  border-bottom-style: solid;
+}
+
+@media (min-width: 768px) {
+  .footer-copyright {
+      position:fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      padding-bottom: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+    .footer-copyright {
+        padding-bottom: 15px;
+        padding-top: 45px;
+    }
+}
+
+@media (min-width:992px){
+  .hide{
+    display: none;
+  }
+}
+  
+@media (max-width:992px){
+  .home{
+    display: none;
+  }
+}

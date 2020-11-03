@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/navigation.css">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
+    
+    <!-- Bootstrap JS -->
+    <script src="js/jquery/jquery-3.4.1.js"></script>
+    <script src="js/bootstrap/bootstrap.bundle.js"></script>
+    <script src="js/contact.js"></script>
+
+    <!--Icons-->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(".load1")
+          .hide(0)
+          .fadeIn(2000);
+        $(".load2")
+          .hide(0)
+          .delay(1500)
+          .fadeIn(2000);
+      });
+    </script>
+
+
+    <title>Joel's Website</title>
+  </head>
+  <body> <!--Navigation Bar-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container sticky-top">
+        <a class="nav-item nav-link" href="index.html">
+          <img src="img/drums/logo.png" class="hide" width="55%" /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav nav-fill w-100">
+            <!--To ensure all navigation elements are centered-->
+            <!--Navigation elements-->
+            <a class="nav-item nav-link pt-3"  href="articles.html">Articles</a>
+            <a class="nav-item nav-link pt-3" href="bio.html">About</a>
+            <a class="nav-item nav-link home" href="index.html">
+            <img src="img/drums/logo.png"  width="35%" /></a>
+            <a class="nav-item nav-link pt-3" href="slideshow.html">Gallery</a>
+            <a class="nav-item nav-link pt-3" href="contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--Title header-->
+      <div class="text-wrapper container load1">
+          <div class="row">
+            <div class="col-md text-center mb-4 mt-5 mt-md-4 mt-lg-3">
+              <h1>Contact Me!</h1>
+              <p>Got any questions? Want to send me a feedback? Feel free to drop me a message!</p>
+            </div>
+          </div>
+        </div>
+      <!--2 Breakpoints-->  
+      <div class="container load2">  
+        <!--Social Media links here-->
+        <div class="row">
+          <div class="col-md">
+              <div class="mb-3">
+                  <div class="text-center">
+                    <h5 class="text-center">Social Media</h5>
+                    <p><ion-icon name="logo-googleplus"></ion-icon> Email : joelbenjaminsurya@gmail.com<br></p>
+                    <p><ion-icon name="logo-facebook"></ion-icon>  Facebook : <a href="http://www.facebook.com">Joel_Surya</a><br></p>
+                    <p><ion-icon name="logo-instagram"></ion-icon> Instagram : <a href="http://www.instagram.com">@Joeoeoel</a><br></p>
+                    <p><ion-icon name="logo-youtube"></ion-icon> Youtube : <a href="http://www.youtube.com">www.youtube.com</a>
+                    </p>
+                  </div>
+                </div>
+          </div>
+          <!--Contact Form-->
+          <div class="form-wrapper col-md mt-5 mt-md-0">
+            <h5 class="text-center">Contact Form <ion-icon name="create"></ion-icon> </h5>
+            <!--When form is submitted, it will check whether validate will false. If it returns false, the form will not submit.-->
+            <!--If all requirements are met, form will take the user to thankyou.html -->
+            <form name="contact" id="form"  onsubmit="return validate()" action="thankyou.html">
+                <!--Enter name-->
+                <div class="form-group">
+                    <!--Form Label-->
+                    <label for="name">Name:</label> 
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter name" oninput="return validate()">
+                    <!--To display the error message through javascript-->
+                    <div class="error" id="errorName"></div>
+                </div>
+                <!--Enter email-->
+                <div class="form-group">
+                    <!--Form Label-->
+                    <label for="email">Email address:</label> 
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" oninput="return validate()">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    <!--To display the error message through javascript-->
+                    <div class="error" id="errorEmail"></div>
+                </div>
+                <!--Enter message-->
+                <div class="form-group">
+                    <!--Form Label-->
+                    <label for="message">Message:</label> 
+                    <textarea name="message" id="message" name="message" class="form-control" placeholder="Write Anything Here!" cols="30" rows="10" oninput="return validate()"></textarea>
+                    <!--To display the error message through javascript-->
+                    <div class="error" id="errorMessage"></div>
+                </div>
+                <!--Submit form-->
+                <div class="buttonwrapper text-center">
+                  <!--Button-->
+                  <input type="submit" name="commit" id="button" value="Send Message!"  class="btn">
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+  </body>
+  
+  <!-- Footer -->
+  <footer class="page-footer font-small blue">
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3 sticky-bottom">© 2019 Copyright:Joel Surya</div>
+  </footer>
+</html>
